@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="iion-rewarded-001">
+    <InLine>
+      <AdSystem version="1.0">iion Creative Hub</AdSystem>
+      <AdTitle>Cooking Game - Rewarded Video</AdTitle>
+      <Impression><![CDATA[https://creative-hub.iion.io/tracking/impression]]></Impression>
+
+      <Creatives>
+        <!-- Video with Companion Endcard -->
+        <Creative id="video" sequence="1">
+          <Linear>
+            <Duration>00:00:15</Duration>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://creative-hub.iion.io/tracking/start]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://creative-hub.iion.io/tracking/firstQuartile]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://creative-hub.iion.io/tracking/midpoint]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://creative-hub.iion.io/tracking/thirdQuartile]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://creative-hub.iion.io/tracking/complete]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough><![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]></ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="1920" height="1080">
+                <![CDATA[https://djlord7.github.io/simid-demo/cookingVideo.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+
+        <!-- Companion Endcard -->
+        <Creative id="endcard">
+          <CompanionAds>
+            <Companion width="320" height="480">
+              <HTMLResource>
+<![CDATA[<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:20px}.logo{width:100px;height:100px;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:50px;margin-bottom:20px;box-shadow:0 10px 30px rgba(0,0,0,.3)}h1{font-size:24px;margin-bottom:8px}.sub{font-size:14px;opacity:.9;margin-bottom:25px}.game{background:rgba(255,255,255,.15);border-radius:12px;padding:15px;margin-bottom:25px;width:100%;max-width:250px}.score{font-size:16px;margin-bottom:12px}.tap{width:70px;height:70px;background:#ff6b6b;border-radius:50%;margin:0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 5px 15px rgba(0,0,0,.3)}.btn{background:#4CAF50;color:#fff;border:none;padding:16px 45px;font-size:18px;font-weight:700;border-radius:25px;cursor:pointer;box-shadow:0 5px 20px rgba(76,175,80,.4)}</style></head><body><div class="logo">🍳</div><h1>Cooking Master</h1><p class="sub">The #1 Cooking Game</p><div class="game"><div class="score">Score: <span id="s">0</span></div><div class="tap" id="t" onclick="c()">👆</div></div><button class="btn" onclick="i()">INSTALL FREE</button><script>var n=0,f=['🍳','🍕','🍔','🌮','🍜','🍰','🍩','🍪'];function c(){n+=10;document.getElementById('s').textContent=n;document.getElementById('t').textContent=f[Math.floor(Math.random()*f.length)]}function i(){try{mraid.open('https://play.google.com/store/apps/details?id=com.iion.cookinggame')}catch(e){window.open('https://play.google.com/store/apps/details?id=com.iion.cookinggame','_blank')}}</script></body></html>]]>
+              </HTMLResource>
+              <CompanionClickThrough><![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]></CompanionClickThrough>
+            </Companion>
+            <Companion width="480" height="320">
+              <HTMLResource>
+<![CDATA[<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;display:flex;align-items:center;justify-content:center;color:#fff;padding:15px}.c{display:flex;align-items:center;gap:30px}.l{text-align:center}.logo{width:70px;height:70px;background:#fff;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:35px;margin-bottom:12px;box-shadow:0 8px 20px rgba(0,0,0,.3)}h1{font-size:20px;margin-bottom:5px}.sub{font-size:12px;opacity:.9}.r{text-align:center}.game{background:rgba(255,255,255,.15);border-radius:10px;padding:12px 20px;margin-bottom:12px}.score{font-size:14px;margin-bottom:8px}.tap{width:55px;height:55px;background:#ff6b6b;border-radius:50%;margin:0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 12px rgba(0,0,0,.3)}.btn{background:#4CAF50;color:#fff;border:none;padding:12px 30px;font-size:14px;font-weight:700;border-radius:20px;cursor:pointer}</style></head><body><div class="c"><div class="l"><div class="logo">🍳</div><h1>Cooking Master</h1><p class="sub">The #1 Cooking Game</p></div><div class="r"><div class="game"><div class="score">Score: <span id="s">0</span></div><div class="tap" id="t" onclick="c()">👆</div></div><button class="btn" onclick="i()">INSTALL FREE</button></div></div><script>var n=0,f=['🍳','🍕','🍔','🌮','🍜','🍰','🍩','🍪'];function c(){n+=10;document.getElementById('s').textContent=n;document.getElementById('t').textContent=f[Math.floor(Math.random()*f.length)]}function i(){try{mraid.open('https://play.google.com/store/apps/details?id=com.iion.cookinggame')}catch(e){window.open('https://play.google.com/store/apps/details?id=com.iion.cookinggame','_blank')}}</script></body></html>]]>
+              </HTMLResource>
+              <CompanionClickThrough><![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]></CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+
+    </InLine>
+  </Ad>
+</VAST>
