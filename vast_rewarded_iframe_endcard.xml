@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="iion-rewarded-playable-002">
+    <InLine>
+      <AdSystem version="1.0">iion Creative Hub</AdSystem>
+      <AdTitle>Cooking Game - Rewarded Video with External Playable Endcard</AdTitle>
+      <Description>Rewarded video ad with external HTML5 playable endcard via IFrame</Description>
+      <Impression id="iion-imp-1"><![CDATA[https://creative-hub.iion.io/tracking/impression]]></Impression>
+
+      <Creatives>
+        <!-- Primary Video Creative -->
+        <Creative id="video-creative" sequence="1">
+          <Linear>
+            <Duration>00:00:15</Duration>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://creative-hub.iion.io/tracking/start]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://creative-hub.iion.io/tracking/firstQuartile]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://creative-hub.iion.io/tracking/midpoint]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://creative-hub.iion.io/tracking/thirdQuartile]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://creative-hub.iion.io/tracking/complete]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough id="click-through"><![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]></ClickThrough>
+              <ClickTracking id="click-tracking"><![CDATA[https://creative-hub.iion.io/tracking/click]]></ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="1920" height="1080" bitrate="2500">
+                <![CDATA[https://djlord7.github.io/simid-demo/cookingVideo.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+
+        <!-- External Playable Endcard via IFrame -->
+        <Creative id="endcard-iframe" sequence="2">
+          <CompanionAds>
+            <!-- Portrait - using external HTML URL -->
+            <Companion width="320" height="480" apiFramework="MRAID">
+              <IFrameResource>
+                <![CDATA[https://creative-hub.iion.io/vast/simid_overlay2.html]]>
+              </IFrameResource>
+              <CompanionClickThrough>
+                <![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]>
+              </CompanionClickThrough>
+            </Companion>
+
+            <!-- Landscape - using external HTML URL -->
+            <Companion width="480" height="320" apiFramework="MRAID">
+              <IFrameResource>
+                <![CDATA[https://creative-hub.iion.io/vast/simid_overlay2.html]]>
+              </IFrameResource>
+              <CompanionClickThrough>
+                <![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]>
+              </CompanionClickThrough>
+            </Companion>
+
+            <!-- Tablet sizes -->
+            <Companion width="768" height="1024" apiFramework="MRAID">
+              <IFrameResource>
+                <![CDATA[https://creative-hub.iion.io/vast/simid_overlay2.html]]>
+              </IFrameResource>
+              <CompanionClickThrough>
+                <![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]>
+              </CompanionClickThrough>
+            </Companion>
+
+            <Companion width="1024" height="768" apiFramework="MRAID">
+              <IFrameResource>
+                <![CDATA[https://creative-hub.iion.io/vast/simid_overlay2.html]]>
+              </IFrameResource>
+              <CompanionClickThrough>
+                <![CDATA[https://play.google.com/store/apps/details?id=com.iion.cookinggame]]>
+              </CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+
+    </InLine>
+  </Ad>
+</VAST>
